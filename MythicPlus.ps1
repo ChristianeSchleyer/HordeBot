@@ -1,3 +1,5 @@
+#Das ist eine Testzeile
+
 $hordebot = '252913444:AAFRsY7v0kbsqa4dhO2FXuZs8nvnWS-ejhU'
 $telegram = "https://api.telegram.org/bot"+$hordebot+"/sendMessage?chat_id="
 
