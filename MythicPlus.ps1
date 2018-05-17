@@ -13,7 +13,7 @@ $users = ConvertFrom-Csv $usercsv
 
 $raiderio = "https://raider.io/api/v1/mythic-plus/affixes?region=eu&locale=de"
 
-$resp = Invoke-WebRequest $raiderio -Method Get 
+$resp = Invoke-WebRequest -Uri $raiderio -Method Get -UseBasicParsing
 
 $char = $resp.RawContentStream.ToArray()
 $str = [Text.Encoding]::UTF8.GetString($char)
