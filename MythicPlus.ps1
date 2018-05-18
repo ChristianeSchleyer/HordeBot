@@ -34,5 +34,6 @@ foreach ($user in $users)
     #send-message
     $uri = $telegram+$user.chatid+$message
     Invoke-WebRequest -Method Post -Uri $uri
+    Das ist ein Test
 }
 #>

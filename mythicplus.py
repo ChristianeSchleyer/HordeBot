@@ -26,6 +26,7 @@ chats = ['-200423768','485357179']
 for chat in chats:
     requests.post("https://api.telegram.org/bot"+bot+"/sendMessage?chat_id="+chat+"&text=Die Mythic Plus Affixe der neuen Woche sind "+affixes+"! Good Luck =)")
     #bot.sendMessage(chat_id,text = "Die Mythi Affixe für die neue Woche sind "+affixes+"! Good Luck =)")
+    # zweiter Test
 
 
 
