@@ -1,3 +1,2 @@
 # HordeBot
 blubb
-:D
