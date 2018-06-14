@@ -1,6 +1,6 @@
 #Das ist eine Testzeile
 
-$hordebot = '252913444:AAFRsY7v0kbsqa4dhO2FXuZs8nvnWS-ejhU'
+$hordebot = Get-AutomationVariable -Name 'Horde Bot API Key'
 $telegram = "https://api.telegram.org/bot"+$hordebot+"/sendMessage?chat_id="
 
 $usercsv = @"
