@@ -26,7 +26,7 @@ $message = "&text=Die Mythic Plus Affixe der neuen Woche sind "+$affixes[0]+", "
 
 $user = $users[2]
 $uri = $telegram+$user.chatid+$message
-Invoke-WebRequest -Method Post -Uri $uri
+Invoke-WebRequest -Method Post -Uri $uri -UseBasicParsing
 
 <#
 foreach ($user in $users)
