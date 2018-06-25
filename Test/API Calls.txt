@@ -1,0 +1,11 @@
+
+Get-Realm Index --> Anetheron = 1104
+https://eu.api.battle.net/data/wow/realm/?namespace=dynamic-eu&locale=de_de&access_token=c6qx2m46cuxg27qmy9b2vxgf
+
+Get-ConnectedRealms for Anetheron
+https://eu.api.battle.net/data/wow/connected-realm/1104?namespace=dynamic-eu&locale=de_de&access_token=c6qx2m46cuxg27qmy9b2vxgf
+
+Get-GuildMembers
+https://eu.api.battle.net/wow/guild/anetheron/order%20and%20chaos?fields=members&locale=de_DE&apikey=ejsd27sa8nqxdyys3g5yw2s7ayp966da
+
+

@@ -1,0 +1,36 @@
+$uri = "https://eu.api.battle.net/wow/guild/anetheron/order%20and%20chaos?fields=members&locale=de_DE&apikey=ejsd27sa8nqxdyys3g5yw2s7ayp966da"
+
+$guild = Invoke-RestMethod -Method Get -Uri $uri
+
+#Filtern der Main Chars nach Rang
+$guild.members[1].character
+
+$raider = foreach ($char in $guild.members){
+    if ($char.Rank -eq 0 -or $char.Rank -eq 1 -or $char.Rank -eq 3 -or $char.Rank -eq 5)
+    {
+        Write-output "$($char.character.Name)-$($char.character.Realm)"
+    }
+}
+
+$guild | Where-Object {$_.members.Rank -eq 1}
+
+GET/guilds/{guild.id}/members
+
+$uri = "https://discordapp.com/api/guilds/457114213307908106/members"
+
+Invoke-RestMethod -Method get -uri $uri -Credential $token 
+
+$headers = { "Authorization":"Bot {}".format($token),
+            "User-Agent":"myBotThing (http://some.url, v0.1)",
+            "Content-Type":"application/json", }
+
+
+$headers = New-Object "System.Collections.Generic.Dictionary[[String],[String],[String]]"
+$headers.Add("Authorization:", 'Bot', $token)
+
+
+
+
+Authorization: Bot MTk4NjIyNDgzNDcxOTI1MjQ4.Cl2FMQ.ZnCjm1XVW7vRze4b7Cq4se7kKWs
+
+$token = "NDYwODAzNjg2MzUzMDc2MjM2.DhKFAw.9r7Rg8aserEZnOuqMfOHwZc7U0U"
